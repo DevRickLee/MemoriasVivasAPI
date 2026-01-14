@@ -1,10 +1,39 @@
-HELP.md
+# --- MEMORIAL VIRTUAL - CONFIGURAÇÕES GITIGNORE ---
+
+# Configurações sensíveis e locais (Segurança)
+application-local.properties
+.env
+.local.env
+
+# Logs do Sistema
+*.log
+logs/
+temp/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- MAVEN E SPRING BOOT ---
 target/
+*.class
+*.jar
+*.war
+*.ear
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+# --- INTELLIJ IDEA ---
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+gen/
+
+# --- OUTRAS IDES (STS, VS Code, NetBeans) ---
 .apt_generated
 .classpath
 .factorypath
@@ -12,14 +41,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
+.vscode/
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -29,5 +51,5 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# --- DOCUMENTAÇÃO ---
+HELP.md
